@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelNow - Туристические услуги</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">TravelNow</div>
+            <div class="menu-toggle" id="mobile-menu">☰</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#tours">Наши туры</a></li>
+                <li><a href="#contact">Оставить заявку</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Открой мир вместе с нами</h1>
+        <p>Незабываемые путешествия, авторские туры и лучшие курорты по доступным ценам. Начни свое приключение уже
+            сегодня!</p>
+        <a href="#tours"><button class="btn">Выбрать тур</button></a>
+    </section>
+
+    <section id="tours" class="tours">
+        <h2>Популярные направления</h2>
+        <div class="tours-grid">
+            <div class="tour-card" data-tour="Романтическая Венеция" data-price="45 000 ₽" data-duration="3 дня / 2 ночи" data-description="Прогулки на гондолах и экскурсии по узким улочкам." data-features="• Экскурсия по каналам Венеции|• Посещение площади Святого Марка|• Прогулка на гондоле|• Дегустация итальянской кухни" data-images="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80,https://images.unsplash.com/photo-1514890547357-a9ee288728e0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80,https://images.unsplash.com/photo-1512453979798-5ea9041e96d6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80,https://placehold.co/800x900?text=Венеция+4,https://placehold.co/800x900?text=Венеция+5">
+                <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                    alt="Венеция" class="tour-img">
+                <div class="tour-info">
+                    <h3>Романтическая Венеция</h3>
+                    <p>3 дня / 2 ночи. Прогулки на гондолах и экскурсии по узким улочкам.</p>
+                    <div class="tour-price">От 45 000 ₽</div>
+                    <button class="btn tour-details-btn">Подробнее</button>
+                </div>
+            </div>
+            <div class="tour-card" data-tour="Современный Дубай" data-price="70 000 ₽" data-duration="5 дней / 4 ночи" data-description="Роскошные отели, шопинг и сафари в пустыне." data-features="• Сафари в пустыне на джипах|• Посещение Бурдж-Халифа|• Шопинг в Dubai Mall|• Ужин в традиционном лагере" data-images="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80,https://images.unsplash.com/photo-1546412414-e1885259563a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80,https://images.unsplash.com/photo-1582719471384-894fbb16e074?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80,https://placehold.co/800x900?text=Дубай+4,https://placehold.co/800x900?text=Дубай+5">
+                <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                    alt="Дубай" class="tour-img">
+                <div class="tour-info">
+                    <h3>Современный Дубай</h3>
+                    <p>5 дней / 4 ночи. Роскошные отели, шопинг и сафари в пустыне.</p>
+                    <div class="tour-price">От 70 000 ₽</div>
+                    <button class="btn tour-details-btn">Подробнее</button>
+                </div>
+            </div>
+            <div class="tour-card" data-tour="Релакс на Бали" data-price="120 000 ₽" data-duration="10 дней / 9 ночей" data-description="Серфинг, йога и потрясающие закаты." data-features="• Уроки серфинга на пляже Кута|• Йога-ретрит в Убуде|• Посещение храмов|• Закат на пляже Джимбаран" data-images="https://images.unsplash.com/photo-1537996194471-e657df975ab4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80,https://images.unsplash.com/photo-1518548419977-706c777f1c86?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80,https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80,https://placehold.co/800x900?text=Бали+4,https://placehold.co/800x900?text=Бали+5">
+                <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                    alt="Бали" class="tour-img">
+                <div class="tour-info">
+                    <h3>Релакс на Бали</h3>
+                    <p>10 дней / 9 ночей. Серфинг, йога и потрясающие закаты.</p>
+                    <div class="tour-price">От 120 000 ₽</div>
+                    <button class="btn tour-details-btn">Подробнее</button>
+                </div>
+            </div>
+            <div class="tour-card" data-tour="Париж — город любви" data-price="85 000 ₽" data-duration="5 дней / 4 ночи" data-description="Романтика Парижа, Эйфелева башня и Лувр." data-features="• Экскурсия по Лувру|• Подъём на Эйфелеву башню|• Прогулка по Сене|• Посещение Монмартра" data-images="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80,https://images.unsplash.com/photo-1499856871940-a09627c6dcf6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80,https://images.unsplash.com/photo-1511739049121-480988219e69?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80,https://placehold.co/800x900?text=Париж+4,https://placehold.co/800x900?text=Париж+5">
+                <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                    alt="Париж" class="tour-img">
+                <div class="tour-info">
+                    <h3>Париж — город любви</h3>
+                    <p>5 дней / 4 ночи. Романтика Парижа, Эйфелева башня и Лувр.</p>
+                    <div class="tour-price">От 85 000 ₽</div>
+                    <button class="btn tour-details-btn">Подробнее</button>
+                </div>
+            </div>
+            <div class="tour-card" data-tour="Древняя Япония" data-price="150 000 ₽" data-duration="8 дней / 7 ночей" data-description="Токио, Киото и традиционная культура." data-features="• Посещение храмов Киото|• Прогулка по Токио|• Чайная церемония|• Горячие источники онсэн" data-images="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80,https://images.unsplash.com/photo-1528360983277-13d9b152c6d1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80,https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80,https://placehold.co/800x900?text=Япония+4,https://placehold.co/800x900?text=Япония+5">
+                <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                    alt="Япония" class="tour-img">
+                <div class="tour-info">
+                    <h3>Древняя Япония</h3>
+                    <p>8 дней / 7 ночей. Токио, Киото и традиционная культура.</p>
+                    <div class="tour-price">От 150 000 ₽</div>
+                    <button class="btn tour-details-btn">Подробнее</button>
+                </div>
+            </div>
+            <div class="tour-card" data-tour="Солнечная Греция" data-price="65 000 ₽" data-duration="7 дней / 6 ночей" data-description="Афины, Санторини и белоснежные пляжи." data-features="• Экскурсия по Акрополю|• Закат на Санторини|• Прогулка на яхте|• Греческая кухня" data-images="https://images.unsplash.com/photo-1516483638261-f4dbaf036063?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80,https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80,https://images.unsplash.com/photo-1533105079780-92b9be482077?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80,https://placehold.co/800x900?text=Греция+4,https://placehold.co/800x900?text=Греция+5">
+                <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036063?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                    alt="Греция" class="tour-img">
+                <div class="tour-info">
+                    <h3>Солнечная Греция</h3>
+                    <p>7 дней / 6 ночей. Афины, Санторини и белоснежные пляжи.</p>
+                    <div class="tour-price">От 65 000 ₽</div>
+                    <button class="btn tour-details-btn">Подробнее</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Не нашли подходящий тур?</h2>
+        <p class="contact-description">Оставьте заявку, и наш менеджер подберет идеальное путешествие для вас.</p>
+
+        <form action="https://formspree.io/f/mlgpbnyz" method="POST">
+            <input type="text" name="user_name" placeholder="Ваше имя" required>
+            <input type="tel" name="user_phone" placeholder="Номер телефона" required>
+            <textarea name="user_message" placeholder="Куда бы вы хотели отправиться?"></textarea>
+
+            <button type="submit" class="btn">Отправить заявку</button>
+
+            <p class="contact-disclaimer">
+                Нажимая кнопку, вы соглашаетесь с обработкой персональных данных.
+            </p>
+        </form>
+    </section>
+
+    <!-- Модальное окно -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal">
+            <button class="modal-close" id="modal-close">&times;</button>
+            <div class="modal-content">
+                <div class="modal-carousel">
+                    <button class="carousel-btn carousel-prev" id="carousel-prev">&#10094;</button>
+                    <div class="carousel-images">
+                        <img src="" alt="" class="modal-img active" id="modal-img-0">
+                        <img src="" alt="" class="modal-img" id="modal-img-1">
+                        <img src="" alt="" class="modal-img" id="modal-img-2">
+                        <img src="" alt="" class="modal-img" id="modal-img-3">
+                        <img src="" alt="" class="modal-img" id="modal-img-4">
+                    </div>
+                    <button class="carousel-btn carousel-next" id="carousel-next">&#10095;</button>
+                    <div class="carousel-dots" id="carousel-dots"></div>
+                </div>
+                <div class="modal-info">
+                    <h2 id="modal-title"></h2>
+                    <p class="modal-duration" id="modal-duration"></p>
+                    <p class="modal-description" id="modal-description"></p>
+                    <div class="modal-price" id="modal-price"></div>
+                    
+                    <h3>Включено в тур:</h3>
+                    <ul class="modal-features" id="modal-features"></ul>
+                    
+                    <h3>Выберите дату начала:</h3>
+                    <input type="date" id="modal-date" class="modal-date-input">
+                    
+                    <h3>Оставить заявку:</h3>
+                    <form action="https://formspree.io/f/mlgpbnyz" method="POST" class="modal-form">
+                        <input type="text" name="user_name" placeholder="Ваше имя" required>
+                        <input type="tel" name="user_phone" placeholder="Номер телефона" required>
+                        <input type="hidden" name="tour_name" id="modal-tour-hidden">
+                        <input type="hidden" name="tour_date" id="modal-date-hidden">
+                        <button type="submit" class="btn">Отправить заявку</button>
+                        <p class="contact-disclaimer">
+                            Нажимая кнопку, вы соглашаетесь с обработкой персональных данных.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 TravelNow. Все права защищены.</p>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
