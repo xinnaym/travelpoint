@@ -5,7 +5,22 @@ mobileMenu.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
 
-// --- МОДАЛЬНОЕ ОКНО ---
+// --- МОДАЛЬНОЕ ОКНО ДЛЯ ПОДБОРА ТУРА ---
+const modalOverlaySelect = document.getElementById('modal-overlay-select');
+const modalCloseSelect = document.getElementById('modal-close-select');
+const btnSelectTour = document.getElementById('btn-select-tour');
+
+btnSelectTour.addEventListener('click', () => {
+    modalOverlaySelect.classList.add('active');
+    document.body.style.overflow = 'hidden';
+});
+
+modalCloseSelect.addEventListener('click', () => {
+    modalOverlaySelect.classList.remove('active');
+    document.body.style.overflow = '';
+});
+
+// --- МОДАЛЬНОЕ ОКНО ДЛЯ КАРТОЧКИ ТУРА ---
 const modalOverlay = document.getElementById('modal-overlay');
 const modalClose = document.getElementById('modal-close');
 const tourButtons = document.querySelectorAll('.tour-details-btn');
