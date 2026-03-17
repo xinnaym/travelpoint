@@ -5,6 +5,30 @@ mobileMenu.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
 
+// Плавный скролл по якорным ссылкам
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href === '#') return;
+        
+        const target = document.querySelector(href);
+        if (target) {
+            e.preventDefault();
+            const headerOffset = 60;
+            const elementPosition = target.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+
+            // Закрываем мобильное меню при клике на ссылку
+            navLinks.classList.remove('active');
+        }
+    });
+});
+
 // --- МОДАЛЬНОЕ ОКНО ДЛЯ ПОДБОРА ТУРА ---
 const modalOverlaySelect = document.getElementById('modal-overlay-select');
 const modalCloseSelect = document.getElementById('modal-close-select');
