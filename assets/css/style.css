@@ -145,6 +145,12 @@ header {
     background-color: var(--accent-hover);
 }
 
+.hero .btn {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
 /* --- СЕКЦИЯ ТУРОВ --- */
 .tours {
     max-width: 1200px;
